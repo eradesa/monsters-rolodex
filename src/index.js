@@ -1,10 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
+//import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+//import App2 from './App_State';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Comments --> Ctrl+K+C / Ctrl+K+U
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//    {/* <h1>This is a Test</h1>
+//     //<App2 />*/}
+//   </React.StrictMode>
+//);
+
+const container = document.getElementById('root');
+const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <App />
